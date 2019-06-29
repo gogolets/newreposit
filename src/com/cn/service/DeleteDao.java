@@ -13,17 +13,17 @@ public class DeleteDao {
 	@Autowired
 	public SqlSessionTemplate sqlSession;
 	
-	//ÓëÊý¾Ý¿â½»»¥£¬ÊµÏÖ¸ù¾Ý±àºÅÉ¾³ýÔ±¹¤ÐÅÏ¢
+	//ï¿½ï¿½ï¿½ï¿½ï¿½Ý¿â½»ï¿½ï¿½ï¿½ï¿½Êµï¿½Ö¸ï¿½ï¿½Ý±ï¿½ï¿½É¾ï¿½ï¿½Ô±ï¿½ï¿½ï¿½ï¿½Ï¢
 	public boolean deleteemp(Employee emp){
 		boolean flag = false;
 		int ret = sqlSession.delete("delemp",emp);
 		if(ret>0){
 			flag = true;
-		}
+		}      
 		return flag;
 	}
 	
-	//ÓëÊý¾Ý¿â½»»¥£¬ÊµÏÖ¸ù¾Ý±àºÅÉ¾³ý¿Í»§ÐÅÏ¢
+	//ï¿½ï¿½ï¿½ï¿½ï¿½Ý¿â½»ï¿½ï¿½ï¿½ï¿½Êµï¿½Ö¸ï¿½ï¿½Ý±ï¿½ï¿½É¾ï¿½ï¿½ï¿½Í»ï¿½ï¿½ï¿½Ï¢
 	public boolean deletecus(Customer cus){
 		boolean flag = false;
 		int ret = sqlSession.delete("delcus",cus);
@@ -33,7 +33,7 @@ public class DeleteDao {
 		return flag;
 	}
 	
-	//ÓëÊý¾Ý¿â½»»¥£¬ÊµÏÖ¸ù¾Ý±àºÅÉ¾³ýÉÌÆ·ÐÅÏ¢
+	//ï¿½ï¿½ï¿½ï¿½ï¿½Ý¿â½»ï¿½ï¿½ï¿½ï¿½Êµï¿½Ö¸ï¿½ï¿½Ý±ï¿½ï¿½É¾ï¿½ï¿½ï¿½ï¿½Æ·ï¿½ï¿½Ï¢
 	public boolean deletegoods(Merchandise mer){
 		boolean flag = false;
 		int ret = sqlSession.delete("delgoods",mer);

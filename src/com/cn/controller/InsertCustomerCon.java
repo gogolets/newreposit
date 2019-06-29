@@ -9,14 +9,14 @@ import com.cn.service.InsertCusDao;
 
 @Controller
 public class InsertCustomerCon {
-	//ÐÂÔö¿Í»§ÐÅÏ¢
+	//ï¿½ï¿½ï¿½ï¿½ï¿½Í»ï¿½ï¿½ï¿½Ï¢
 	@Autowired
 	InsertCusDao insertcusdao;
 	@RequestMapping("addCustomer.do")
 	public String add(Customer cus){
 		if(insertcusdao.insertCus(cus)>0){
 			return "redirect:/selectCus.do";
-		}else{
+		}else{         
 			return "login-err";
 		}
 		
