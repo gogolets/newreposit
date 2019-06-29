@@ -14,7 +14,7 @@ public class DeleteCon {
 	@Autowired
 	DeleteDao deldao;
 	
-	//и╬ЁЩт╠╧╓пео╒
+	//Е╥╢Ф▀┴Е╥╢Ф▀┴Е╟▐И╜■Д╩≥
 	@RequestMapping("deleteEmp.do")
 	public String empdel(Employee emp){
 		if(deldao.deleteemp(emp)){
@@ -25,7 +25,7 @@ public class DeleteCon {
 		}
 	}
 	
-	//и╬ЁЩ©м╩╖пео╒
+	//и╬О©╫О©╫О©╫м╩О©╫О©╫О©╫о╒
 	@RequestMapping("deleteCus.do")
 	public String cusdel(Customer cus){
 		if(deldao.deletecus(cus)){
@@ -36,7 +36,7 @@ public class DeleteCon {
 		}
 	}
 	
-	//и╬ЁЩилф╥пео╒
+	//и╬О©╫О©╫О©╫О©╫ф╥О©╫О©╫о╒
 	@RequestMapping("deleteMer.do")
 	public String merdel(Merchandise mer){
 		if(deldao.deletegoods(mer)){
