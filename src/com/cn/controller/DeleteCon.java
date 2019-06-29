@@ -14,7 +14,7 @@ public class DeleteCon {
 	@Autowired
 	DeleteDao deldao;
 	
-	//删除员工信息
+	//删除员工
 	@RequestMapping("deleteEmp.do")
 	public String empdel(Employee emp){
 		if(deldao.deleteemp(emp)){
